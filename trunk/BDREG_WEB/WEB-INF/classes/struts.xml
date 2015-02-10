@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC  
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="serve.static.browserCache" value="false" />
+	<package name="default" extends="struts-default" namespace="/">
+
+	<interceptors>
+
+			<interceptor name="parameterFilter"  
+                class="com.opensymphony.xwork2.interceptor.ParameterFilterInterceptor" /> 
+			<interceptor name="authenticationInterceptor" class="org.interceptors.LoginInterceptor"/>
+			<interceptor-stack name="secureStack">
+				<interceptor-ref name="authenticationInterceptor" />
+				<interceptor-ref name="defaultStack" >
+              			<param name="params.excludeParams">
+                 		dojo\..*,^struts\..*,_.*,d-\d+?-[sop],^\d+(f?\d+)?$  
+              			</param>
+              	</interceptor-ref>
+			</interceptor-stack>
+			<!-- This is for addFieldError -->
+			<interceptor-stack name="defaultStack">
+				<interceptor-ref name="exception" />
+				<interceptor-ref name="alias" />
+				<interceptor-ref name="servletConfig" />
+				<interceptor-ref name="prepare" />
+				<interceptor-ref name="i18n" />
+				<interceptor-ref name="chain" />
+				<interceptor-ref name="debugging" />
+				<interceptor-ref name="profiling" />
+				<interceptor-ref name="scopedModelDriven" />
+				<interceptor-ref name="modelDriven" />
+				<interceptor-ref name="fileUpload" />
+			</interceptor-stack>
+  </interceptors>
+
+  <default-interceptor-ref name="secureStack" />
+
+
+<global-results>
+   <result name="login" type="redirectAction">login.action</result>   
+</global-results>	
+
+	
+	<action name="login" class="org.controller.authentication.Login">
+		<result name="success">
+			/WEB-INF/jsp/Login.jsp
+		</result>
+		<interceptor-ref name="defaultStack"/>
+	</action>
+	
+	<action name="logout" class="org.controller.authentication.Logout" >
+		<result name="success">/WEB-INF/jsp/Login.jsp</result>
+		<interceptor-ref name="defaultStack"/>
+	</action>
+	
+	
+	<action name="checkValidity" class="org.controller.authentication.CheckValidity">
+		<result name="input">/WEB-INF/jsp/Login.jsp</result>
+		<result name="success">/WEB-INF/jsp/Home.jsp</result>		
+	</action>
+	
+	<action name="regStatHome" class="org.controller.RegistrationStat" method="regStatHome" >
+		<result name="success">/WEB-INF/jsp/RegStatHome.jsp</result>
+	</action>
+	<action name="home">
+		<result name="success">/WEB-INF/jsp/Home.jsp</result>
+	</action>
+	<action name="fetchJob" class="org.controller.FetchJob" method="fetchJobs">
+		<result type="stream">
+				<param name="contentType">json</param>
+				<param name="inputName">inputStream</param>
+			</result>
+	</action>
+	<action name="fetchRegStat" class="org.controller.RegistrationStat" method="fetchRegStat">
+		<result type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+			</result>
+	</action>
+	<action name="fetchJobseekerList" class="org.controller.RegistrationStat" method="fetchJobseekerList">
+		<result name="success">/WEB-INF/jsp/JobseekerList.jsp</result>
+	</action>
+	<action name="jobseekerTableData" class="org.controller.JobseekerTableData">
+      <result name="success">/WEB-INF/jsp/JobseekerTableDataJson.jsp</result>
+    </action>
+    <action name="reportJobseekerList" class="org.controller.ReportJobseekerList">
+			<result type="stream">
+				<param name="contentType">application/pdf</param>
+				<param name="inputName">inputStream</param>
+			</result>	
+			<result name="logout" type="redirectAction">
+				logout.action
+		    </result>				    
+	</action>
+	
+	</package>
+</struts>
+
+
+
+
+

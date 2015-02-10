@@ -1,0 +1,291 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #000000
+}
+p {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #000000
+}
+a {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;  
+  color: #3366CC;
+  text-decoration: none
+}
+textarea, input, select {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #000000
+}
+td {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #000000
+}
+h1 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #CC0033;
+  margin: 0pt
+}
+h2 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #CC0033;
+  margin: 0pt
+}
+h3 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: #3366CC;
+  margin: 0pt
+}
+h4 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #FFFFFF;
+  margin: 0pt
+}
+h4 a {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #FFFFFF;
+  margin: 0pt
+}
+p.small {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #000000
+}
+p.smallheader {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF
+}
+tt {
+  font-size: 14px;
+}
+pre {
+  font-size: 14px;
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  word-wrap:break-word;
+  _white-space:pre;   /* IE only hack to re-specify in addition to word-wrap  */
+}
+.tableframe {
+  border-right: #999999 1px solid;
+  border-top: #999999 1px solid;
+  border-left: #999999 1px solid;
+  border-bottom: #999999 1px solid
+}
+.tableframeinv {
+  border-right: #F1F4FA 1px solid;
+  border-top: #F1F4FA 1px solid;
+  border-left: #F1F4FA 1px solid;
+  border-bottom: #F1F4FA 1px solid
+}
+.emphasizedcell {
+  background-color: #3366CC
+}
+.emphasizedgroup {
+  background-color: #F1F4FA
+}
+.normalgroup {
+  background-color: #FFFFFF
+}
+.headergroup {
+  background-color: #C4CDDE
+}
+.cardcolor {
+  background-color: #F1F4FA
+}
+.reply {
+  font-family: Verdana, Arial, Helvetica, sans-serif
+}
+.error {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #CC3333
+}
+.message {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #3333FF
+}
+.green {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #009900
+}
+.grey {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #999999
+}
+.subindent {
+  text-indent:50px
+}
+.listselframe {
+  background-image: url("/BMREG_WEB/resources/images/b-listselback.jpg");
+  background-repeat: repeat-x;
+  background-color: #FFFFFF;
+  background-position: bottom;
+  border-right: #999999 1px solid;
+  border-top: #999999 1px solid;
+  border-left: #999999 1px solid;
+  border-bottom: #999999 1px solid
+}
+.boxtop {
+  background-image: url("/BMREG_WEB/resources/images/b-boxbluetop.jpg");
+  background-position: top;
+  background-repeat: repeat-x;
+  background-color: #BDCDEF;
+  border-right: #999999 1px solid;
+  border-top: #999999 1px solid;
+  border-left: #999999 1px solid;
+  border-bottom: #999999 1px solid
+}
+.boxback {
+  background-image: url("/BMREG_WEB/resources/images/b-boxback.jpg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-color: #FFFFFF;
+  border-right: #999999 1px solid;
+  border-left: #999999 1px solid;
+  border-bottom: #999999 1px solid
+}
+hr {
+  width:100%;
+  height:1px;
+  color:#999999;
+  border-style: solid;
+  border-color: #999999;
+  border-width: 1px 0px 0px 0px
+}
+.SPF_red {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #CC3333
+}
+.SPF_orange {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #FF9933
+}
+.SPF_green {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #336633
+}
+.SPF_error {
+  font-weight: bold;
+  color: #CC3333
+}
+.SPF_match {
+  font-weight: bold;
+  color: #3333FF
+}
+.SPF_comment {
+  font-weight: bold;
+  color: #3333FF
+}
+.userRole {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #3366CC
+}
+.titleBorderTop {
+  border-top: #999999 1px solid;
+  border-left: #999999 1px solid;
+  border-right: #999999 1px solid
+}
+.pulldownMenuTopLevel {
+  background-image: url("/BMREG_WEB/resources/images/b-menuback.jpg");
+  background-repeat: repeat-x;
+  background-color: #FFFFFF;
+  background-position: bottom;
+  border-top: #999999 1px solid;
+  border-bottom: #999999 1px solid;
+  border-left: #999999 1px solid;
+  border-right: #999999 1px solid
+}
+.pulldownMenuInner {
+  background-color: #F1F4FA;
+  border: #999999 1px solid
+}
+.pulldownMenuItem {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #3366CC;
+  padding-top: 4;
+  padding-bottom: 4;
+  padding-left: 5;
+  padding-right: 5;
+  cursor: pointer
+}
+.pulldownMenuItemHighlight {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #3366CC;
+  padding-top:4;
+  padding-bottom: 4;
+  padding-left: 5;
+  padding-right: 5;
+  cursor: pointer;
+  background-color: #B6B9CA
+}
+.pulldownMenuItemSpec {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #3366CC;
+  cursor: pointer
+}
+.pulldownMenuItem a {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #3366CC;
+  text-decoration: none
+}
+.pulldownMenuItem a:hover {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #3366CC;
+  text-decoration: none;
+  background-color: #B6B9CA
+}
+.pulldownMenuSeparator {
+  border-top: #999999 1px solid
+}
+.pulldownMenuDropShadowRight {
+  width: 5;
+  background: url("/BMREG_WEB/resources/images/b-menudropshadow.png") no-repeat top right
+}
+.pulldownMenuDropShadowBottom {
+  height: 5;
+  background: url("/BMREG_WEB/resources/images/b-menudropshadow.png") no-repeat bottom left
+}
+.pulldownMenuDropShadowCorner {
+  width: 5;
+  height: 5;
+  background: url("/BMREG_WEB/resources/images/b-menudropshadow.png") no-repeat bottom right
+}
+.pulldownMenuArrow {
+  width: 9;
+  height: 9;
+  background: url("/BMREG_WEB/resources/images/b-menuarrow.png") no-repeat center
+}
+.pulldownMenuArrowDown {
+  width: 12;
+  height: 9;
+  background: url("/BMREG_WEB/resources/images/b-menuarrowdown.png") no-repeat center
+}
