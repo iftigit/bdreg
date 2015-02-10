@@ -1,0 +1,178 @@
+.box {border:1px solid #006219;width: 1000px;margin-top: }
+.box h3 {background:#006219;color:white;padding:3px;margin-top:0px;text-align: left;padding-left: 10px;}
+.box p {color:#333;padding:0px;}
+.box {
+	    -moz-border-radius-topright:5px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-top-left-radius:5px;
+}
+
+
+.box1 {border:1px solid #077e26;width: 1000px;margin-top: }
+.box1 h3 {background:#077e26;color:white;padding:3px;margin-top:0px;text-align: left;padding-left: 10px;}
+.box1 p {color:#333;padding:0px;}
+.box1 {
+	    -moz-border-radius-topright:5px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-top-left-radius:5px;
+}
+
+.box2 {border:1px solid #077e26;width: 1000px;margin-top: }
+.box2 h3 {background:#079e26;color:white;padding:3px;margin-top:0px;text-align: center;padding-left: 10px;}
+.box2 p {color:#333;padding:0px;}
+.box2 {
+	    -moz-border-radius-topright:5px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-top-left-radius:5px;
+}
+
+.box3 {border:1px solid #077e26;width: 475px;margin-top: }
+.box3 h3 {background:yellow;color:blank;padding:3px;margin-top:0px;text-align: center;padding-left: 10px;}
+.box3 p {color:#333;padding:0px;}
+.box3 {
+	    -moz-border-radius-topright:5px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-top-left-radius:5px;
+}
+
+.boxPreview {border:1px solid #7F5F55;width: 1000px;margin-top: }
+.boxPreview h3 {background:#7F5F55;color:white;padding:3px;margin-top:0px;text-align: left;padding-left: 10px;}
+.boxPreview p {color:#333;padding:0px;}
+.boxPreview {
+	    -moz-border-radius-topright:5px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-top-left-radius:5px;
+}
+
+.infoPreviewTable
+{
+margin-top: -12px;	
+}
+
+.infoPreviewTable td
+{
+padding-left: 20px;
+	height: 32px;
+	text-align: left;	
+}
+
+.infoTable td
+{
+	padding-left: 20px;
+	height: 32px;
+	text-align: left;
+}
+.textBox
+{
+	width: 250px;border: 1px solid grey;
+}
+
+.selectBox
+{
+	border: 1px solid grey;
+	width: 200px;
+}
+
+.addressSelectBox
+{
+	width: 250px;border:1px solid grey;
+}
+
+.nameTextBox
+{
+	width:200px;border: 1px solid grey;
+}
+
+.captchCode
+{
+ font-size: 25px;font-weight: bold;text-align: center;
+ width: 296px;height: 50px;border: 2px solid grey;margin-top: 10px;
+}
+
+.submitButton
+{
+	width: 200px;
+	height: 50px;
+	font-weight: bold;
+}
+
+.msgTextBox
+{
+width: 0px; border: 0px;background-color: #F2F7E3;
+}
+
+#footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                height: 20px;
+                font-size:14px;
+                text-align:center;
+                border-top: 1px solid green;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                
+             
+        }
+        
+#Example_F {
+-moz-box-shadow: 0 0 5px 5px #888;
+-webkit-box-shadow: 0 0 5px 5px#888;
+box-shadow: 0 0 5px 5px #888;
+}
+
+.statLine1
+{
+ 	font-size: 20px;
+ 	color: maroon;
+ 	font-weight: bold;
+ 	margin-left: 20px;
+}
+
+table.divisionStatTable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.divisionStatTable th {
+	background:#b5cfd2 url('/BMREG_WEB/resources/images/cell-blue.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+table.divisionStatTable td {
+	background:#dcddc0 url('/BMREG_WEB/resources/images/cell-grey.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+table.divisionStatTable  td.redCell {
+	background:#dcddc0 url('/BMREG_WEB/resources/images/cell-red.jpg');
+	border-width: 1px;
+	padding: 8px;
+	color:white;
+	border-style: solid;
+	border-color: #999999;
+}
+
+
+.errors li { list-style: none;color: red;}
+
+.actionMessage li
+{
+	font-size: 17px;
+	color: #6600CC;
+	font-weight: bold;
+	list-style: none;
+}
